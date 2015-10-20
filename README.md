@@ -11,9 +11,9 @@ To-do:
 - add client-side method to log browser errors and exceptions
 
 ##Installation
-Add package using 'meteor install nakedcreativity:raygun'
+Add package using `meteor install nakedcreativity:raygun`
 
-Add 'Raygun.init(options)' to 'Meteor.startup()' on the server, ie:
+Add `Raygun.init(options)` to `Meteor.startup()` on the server, ie:
 
 	Meteor.startup(function () {
 		Raygun.init({
@@ -22,6 +22,6 @@ Add 'Raygun.init(options)' to 'Meteor.startup()' on the server, ie:
   		});
 	});
 
-where 'Meteor.settings.raygun.key' is your application's API key, stored in an environment variable. 
+where `Meteor.settings.raygun.key` is your application's API key, stored in an environment variable. 
 
-The 'console' option determines whether the error is also logged to the error log, which may be useful in development or local environments.
+The `console` option determines whether the error is also logged to the error log, which may be useful in development or local environments.
